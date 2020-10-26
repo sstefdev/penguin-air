@@ -1,0 +1,33 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 30rem 0;
+  margin-top: -25rem;
+}
+
+.section-features {
+  padding: 35rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(/img/fuji-mnt.jpg);
+  background-size: cover;
+  transform: skewY(5deg);
+  margin-top: -11rem;
+
+  & > * {
+    transform: skewY(-5deg);
+  }
+}
+
+.section-trips {
+  background-color: $color-grey-light-1;
+  padding: 20rem 0 10rem 0;
+  margin-top: -11rem;
+}
+
+.section-stories {
+  position: relative;
+  padding: 10rem 0;
+}
