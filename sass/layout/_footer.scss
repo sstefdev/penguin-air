@@ -1,6 +1,6 @@
 .footer {
   background-color: $color-black-2;
-  padding: 10rem;
+  padding: 6rem;
   font-size: 1.4rem;
 
   &__logo-box {
@@ -54,7 +54,20 @@
     color: $color-grey-dark;
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
-    width: 60%;
+    width: 50%;
     float: right;
+    padding-bottom: 2rem;
+  }
+
+  &__git {
+    color: $color-primary;
+    margin-top: 1.5rem;
+    padding-right: 1rem;
+
+    &-email {
+      text-transform: uppercase;
+      text-align: center;
+      padding-left: 0.85rem;
+    }
   }
 }

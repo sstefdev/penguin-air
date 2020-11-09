@@ -1,6 +1,6 @@
 .footer {
   background-color: #223c41;
-  padding: 10rem;
+  padding: 6rem;
   font-size: 1.4rem; }
   .footer__logo-box {
     text-align: center;
@@ -33,8 +33,17 @@
     color: #777;
     border-top: 1px solid #777;
     padding-top: 2rem;
-    width: 60%;
-    float: right; }
+    width: 50%;
+    float: right;
+    padding-bottom: 2rem; }
+  .footer__git {
+    color: #51adcf;
+    margin-top: 1.5rem;
+    padding-right: 1rem; }
+    .footer__git-email {
+      text-transform: uppercase;
+      text-align: center;
+      padding-left: 0.85rem; }
 
 *,
 *::after,
