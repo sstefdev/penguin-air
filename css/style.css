@@ -1,5 +1,5 @@
 .footer {
-  background-color: #2a4057;
+  background-color: #223c41;
   padding: 10rem;
   font-size: 1.4rem; }
   .footer__logo-box {
@@ -19,7 +19,7 @@
     .footer__items:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__link:link, .footer__link:visited {
-    background-color: #2a4057;
+    background-color: #223c41;
     color: #777;
     text-decoration: none;
     text-transform: uppercase;
