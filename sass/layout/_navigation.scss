@@ -22,8 +22,10 @@
     }
 
     @include respond(phone) {
-      top: 4rem;
+      top: 5rem;
       right: 3.5rem;
+      height: 5rem;
+      width: 5rem;
     }
   }
 
@@ -43,8 +45,10 @@
     }
 
     @include respond(phone) {
-      top: 4rem;
+      top: 5rem;
       right: 3.5rem;
+      height: 5rem;
+      width: 5rem;
     }
   }
 
@@ -127,6 +131,11 @@
       height: 2px;
       background-color: $color-black;
       display: inline-block;
+      @include respond(phone) {
+        top: -1rem;
+        width: 2rem;
+        height: 1px;
+      }
     }
 
     &::before,
