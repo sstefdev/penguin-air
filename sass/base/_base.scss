@@ -25,4 +25,10 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 0.5rem;
+
+  @include respond(tab) {
+    font-size: 50%;
+    padding: 0;
+  }
 }

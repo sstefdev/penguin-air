@@ -2,9 +2,15 @@
   background-color: #223c41;
   padding: 6rem;
   font-size: 1.4rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 4rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -12,6 +18,10 @@
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__items {
@@ -36,6 +46,10 @@
     width: 50%;
     float: right;
     padding-bottom: 2rem; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
   .footer__git {
     color: #51adcf;
     margin-top: 1.5rem;
@@ -65,7 +79,12 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0.5rem; }
+  @media (max-width: 56.25em) {
+    body {
+      font-size: 50%;
+      padding: 0; } }
 
 @keyframes moveInLeft {
   0% {
@@ -108,12 +127,20 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1.5s;
     animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary-main {
+        letter-spacing: 1rem;
+        font-size: 4rem; } }
   .heading-primary-sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.7rem;
     animation: moveInRight 1.5s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary-sub {
+        letter-spacing: 0.5rem;
+        font-size: 1rem; } }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -134,6 +161,12 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewY(10deg) skewX(5deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -509,6 +542,9 @@ body {
   background-color: #f7f7f7;
   padding: 30rem 0;
   margin-top: -25rem; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 30rem 0; } }
 
 .section-features {
   padding: 35rem 0;
@@ -518,6 +554,10 @@ body {
   margin-top: -11rem; }
   .section-features > * {
     transform: skewY(-5deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 30rem 0;
+      margin-top: 1rem; } }
 
 .section-trips {
   background-color: #f7f7f7;
@@ -547,6 +587,13 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 8rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -555,6 +602,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 8rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -610,6 +664,14 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -621,6 +683,14 @@ body {
   background-image: radial-gradient(#51adcf, #a5ecd7);
   z-index: 100;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__nav {
   height: 100vh;

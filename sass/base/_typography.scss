@@ -12,6 +12,10 @@
     animation-name: moveInLeft;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 4rem;
+    }
   }
 
   &-sub {
@@ -20,6 +24,10 @@
     font-weight: 700;
     letter-spacing: 1.7rem;
     animation: moveInRight 1.5s ease-out;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+      font-size: 1rem;
+    }
   }
 }
 
@@ -47,6 +55,14 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
+
+  @include respond(tab) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 
   &:hover {
     transform: skewY(10deg) skewX(5deg) scale(1.1);
