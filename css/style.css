@@ -752,8 +752,8 @@ body {
       margin-bottom: 1.5rem; }
   .popup__middle {
     position: absolute;
-    left: 49.343%;
-    height: 29.2vw;
+    left: 49.6%;
+    height: 29.47vw;
     width: 14.5px;
     background-image: linear-gradient(to right, #a5ecd7, #0278ae);
     z-index: 9000; }
