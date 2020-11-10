@@ -677,7 +677,9 @@ body {
       top: 5rem;
       right: 3.5rem;
       height: 5rem;
-      width: 5rem; } }
+      width: 5rem;
+      margin: 0;
+      padding: 0; } }
 
 .navigation__background {
   height: 6rem;
