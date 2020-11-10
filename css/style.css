@@ -54,6 +54,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -713,14 +722,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 60%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
-    transition: all 0.4s 0.1s; }
+    transition: all 0.4s 0.1s;
+    margin: 2rem; }
   .popup__left {
     width: 50%;
     float: left;
@@ -752,8 +762,8 @@ body {
       margin-bottom: 1.5rem; }
   .popup__middle {
     position: absolute;
-    left: 49.6%;
-    height: 29.47vw;
+    left: 49.4%;
+    height: 19.5vw;
     width: 14.5px;
     background-image: linear-gradient(to right, #a5ecd7, #0278ae);
     z-index: 9000; }
