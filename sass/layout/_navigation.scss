@@ -43,7 +43,7 @@
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
     @include respond(tab-lan) {
       top: 4rem;
-      right: 8rem;
+      right: 8.5rem;
     }
 
     @include respond(phone) {

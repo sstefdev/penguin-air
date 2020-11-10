@@ -23,7 +23,12 @@
     @include respond(tab) {
       position: absolute;
 
-      left: -3rem;
+      left: 0.5rem;
+    }
+    @include respond(phone) {
+      position: absolute;
+
+      left: -2.5rem;
     }
   }
 

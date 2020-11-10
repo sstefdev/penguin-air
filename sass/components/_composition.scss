@@ -1,5 +1,8 @@
 .composition {
   position: relative;
+  @include respond(tab) {
+    left: 2.7rem;
+  }
 
   &__photo {
     width: 55%;
@@ -10,19 +13,37 @@
     transition: 0.2s;
     outline-offset: 0.3rem;
 
+    @include respond(tab) {
+      float: left;
+      position: relative;
+      width: 50%;
+      box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+    }
+
     &--p1 {
       left: -5%;
       top: -2rem;
+
+      @include respond(tab) {
+        top: 0;
+      }
     }
 
     &--p2 {
       right: 0;
       top: -10rem;
+      @include respond(tab) {
+        top: 0;
+      }
     }
 
     &--p3 {
       left: 20%;
       top: 20rem;
+      @include respond(tab) {
+        top: -35rem;
+        left: 10rem;
+      }
     }
 
     &:hover {
