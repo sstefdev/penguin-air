@@ -20,6 +20,11 @@
 
   &__logo {
     height: 5.5rem;
+    @include respond(tab) {
+      position: absolute;
+
+      left: -3rem;
+    }
   }
 
   &__text-box {
