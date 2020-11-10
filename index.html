@@ -19,46 +19,44 @@
     <link rel="shortcut icon" type="image/png" href="/img/pengui-logo.png" />
     <title>Pengui Air - Travel Anywhere</title>
   </head>
-
-  <div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
-    <label for="nav-toggle" class="navigation__button"
-      ><span class="navigation__icon"></span
-    ></label>
-    <div class="navigation__background">&nbsp;</div>
-    <nav class="navigation__nav">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link"
-            ><span
-              class="iconify"
-              data-icon="mdi-penguin"
-              data-inline="false"
-            ></span>
-            About Pengui</a
-          >
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link"><span>&#9880;</span> Benefits</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link"
-            ><span>&#9784;</span> Popular Vacations</a
-          >
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link"
-            ><span>&#9992;</span> Business Trips</a
-          >
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link"><span>&#9993;</span> Book now</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="navigation__button"
+        ><span class="navigation__icon"></span
+      ></label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span
+                class="iconify"
+                data-icon="mdi-penguin"
+                data-inline="false"
+              ></span>
+              About Pengui</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>&#9880;</span> Benefits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>&#9784;</span> Popular Vacations</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>&#9992;</span> Business Trips</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>&#9993;</span> Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
         <img src="/img/penguin.png" alt="pengui-logo" class="header__logo" />
@@ -69,7 +67,7 @@
           <span class="heading-primary-main">Pengui Air</span>
           <span class="heading-primary-sub">Travel at any time, anywhere</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Book A Flight</a>
+        <a href="#section-trips" class="btn btn--white btn--animated">Book A Flight</a>
       </div>
     </header>
 
@@ -176,7 +174,7 @@
         </div>
       </section>
 
-      <section class="section-trips">
+      <section class="section-trips" id="section-trips">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Most popular vacations and business trips
@@ -208,7 +206,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$499</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -237,7 +235,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$1399</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -266,7 +264,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$899</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -468,9 +466,28 @@
       </div>
     </footer>
 
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__content">
-        POPUP
+        <div class="popup__left">
+          <img src="img/grecee_vacation.jpg" alt="Vacation photo" class="popup__img">
+        </div>
+        <div class="popup__middle"></div>
+        <div class="popup__right">
+          <img src="img//mnt-vacation.jpg" alt="Vacation photo" class="popup__img">
+        </div>
+        <div class="popup__text">
+          <a href="#section-trips" class="popup__close"><i class="far fa-times-circle"></i></a>
+        <h2 class="heading-secondary">Book right away</h2>  
+        <h3 class="heading-teritiary">Important &ndash; Please read these terms </h3>
+        <p class="popup__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, minima possimus sunt incidunt rem eius dolorem, similique provident, quam quibusdam temporibus ab? Quo molestias totam delectus voluptas quae labore temporibus!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, minima possimus sunt incidunt rem eius dolorem, similique provident, quam quibusdam temporibus ab? Quo molestias totam delectus voluptas quae labore temporibus!
+          us dolorem, similique provident, quam quibusdam temporibus ab? Quo molestias totam delectus voluptas quae labore temporibus
+        </p> 
+        <a href="#" class="btn btn--blue">
+          Book Here
+        </a>
+      </div>
       </div>
     </div>
   </body>
