@@ -77,9 +77,6 @@ html {
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
-  @media (max-width: 37.5em) {
-    html {
-      width: 10px; } }
 
 body {
   box-sizing: border-box;
@@ -87,8 +84,7 @@ body {
   @media (max-width: 56.25em) {
     body {
       font-size: 50%;
-      padding: 0;
-      width: 500px; } }
+      padding: 0; } }
 
 @keyframes moveInLeft {
   0% {
@@ -586,13 +582,18 @@ body {
         font-size: 5rem; } }
 
 .header {
-  height: 95vh;
+  height: 85vh;
   background-image: linear-gradient(to right bottom, rgba(165, 236, 215, 0.8), rgba(2, 120, 174, 0.8)), url(/img/mountain2.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(50% 13%, 100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
   clip-path: polygon(50% 13%, 100% 0, 100% 75%, 50% 100%, 0 75%, 0 0); }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(50% 13%, 100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+      clip-path: polygon(0% 0%, 100% 0, 75% 100%, 25% 100%);
+      height: 78vh; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
