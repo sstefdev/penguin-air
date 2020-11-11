@@ -743,12 +743,13 @@ body {
           transform: scale(1.2);
           left: -5rem; } }
     .composition__photo--p2 {
-      left: 5rem;
+      left: 20rem;
       top: -10rem; }
       @media (max-width: 56.25em) {
         .composition__photo--p2 {
           top: 0;
-          transform: scale(1.2); } }
+          transform: scale(1.2);
+          left: 2rem; } }
     .composition__photo--p3 {
       left: 10%;
       top: 20rem; }

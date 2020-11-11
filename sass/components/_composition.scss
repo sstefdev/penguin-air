@@ -33,11 +33,12 @@
     }
 
     &--p2 {
-      left: 5rem;
+      left: 20rem;
       top: -10rem;
       @include respond(tab) {
         top: 0;
         transform: scale(1.2);
+        left: 2rem;
       }
     }
 
