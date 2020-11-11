@@ -9,6 +9,9 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease-in;
+  @include respond(phone) {
+    display: none;
+  }
 
   &__content {
     @include absCenter;
@@ -51,12 +54,6 @@
   &__text {
     font-size: 2rem;
 
-    h3 {
-      @include respond(phone) {
-        margin-bottom: 0.2rem;
-      }
-    }
-
     h2 {
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -64,9 +61,6 @@
     p {
       padding: 2rem;
       padding-bottom: 1rem;
-      @include respond(phone) {
-        visibility: hidden;
-      }
     }
     a {
       margin-bottom: 1.5rem;
@@ -78,13 +72,6 @@
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    @include respond(phone) {
-      display: block;
-      position: absolute;
-      top: 67rem;
-      left: 6rem;
-      padding-bottom: 5rem;
-    }
   }
 
   &__middle {
@@ -98,6 +85,12 @@
       $color-primary-dark
     );
     z-index: 9000;
+    @include respond(tab-lan) {
+      left: 39.2rem;
+    }
+    @include respond(tab) {
+      left: 32.82rem;
+    }
   }
 
   &:target {
