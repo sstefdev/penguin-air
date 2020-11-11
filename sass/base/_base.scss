@@ -23,7 +23,7 @@ html {
   }
 
   @include respond(phone) {
-    width: 500px;
+    width: 10px;
   }
 }
 
@@ -34,5 +34,6 @@ body {
   @include respond(tab) {
     font-size: 50%;
     padding: 0;
+    width: 500px;
   }
 }

@@ -79,7 +79,7 @@ html {
       font-size: 75%; } }
   @media (max-width: 37.5em) {
     html {
-      width: 500px; } }
+      width: 10px; } }
 
 body {
   box-sizing: border-box;
@@ -87,7 +87,8 @@ body {
   @media (max-width: 56.25em) {
     body {
       font-size: 50%;
-      padding: 0; } }
+      padding: 0;
+      width: 500px; } }
 
 @keyframes moveInLeft {
   0% {
@@ -806,7 +807,7 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#51adcf, #a5ecd7);
   z-index: 100;
-  transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); }
   @media (max-width: 75em) {
     .navigation__background {
       top: 4rem;
@@ -826,7 +827,7 @@ body {
   z-index: 150;
   opacity: 0;
   width: 0;
-  transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); }
 
 .navigation__list {
   position: absolute;
