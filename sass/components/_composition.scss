@@ -1,7 +1,8 @@
 .composition {
   position: relative;
   @include respond(tab) {
-    left: 2.7rem;
+    left: 1.6rem;
+    top: 5rem;
   }
 
   &__photo {
@@ -26,23 +27,27 @@
 
       @include respond(tab) {
         top: 0;
+        transform: scale(1.2);
+        left: -5rem;
       }
     }
 
     &--p2 {
-      right: 0;
+      left: 5rem;
       top: -10rem;
       @include respond(tab) {
         top: 0;
+        transform: scale(1.2);
       }
     }
 
     &--p3 {
-      left: 20%;
+      left: 10%;
       top: 20rem;
       @include respond(tab) {
-        top: -35rem;
+        top: -40rem;
         left: 10rem;
+        transform: scale(1.3);
       }
     }
 
