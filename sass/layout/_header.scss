@@ -32,8 +32,8 @@
     }
     @include respond(phone) {
       position: absolute;
-
-      left: -2.5rem;
+      left: 1rem;
+      top: 1rem;
     }
   }
 

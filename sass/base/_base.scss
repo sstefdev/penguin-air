@@ -33,5 +33,6 @@ body {
   @include respond(tab) {
     font-size: 50%;
     padding: 0;
+    background-color: $color-grey-light-1;
   }
 }

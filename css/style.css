@@ -84,7 +84,8 @@ body {
   @media (max-width: 56.25em) {
     body {
       font-size: 50%;
-      padding: 0; } }
+      padding: 0;
+      background-color: #f7f7f7; } }
 
 @keyframes moveInLeft {
   0% {
@@ -148,7 +149,6 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: black;
-  padding: 0.5rem;
   box-sizing: border-box; }
 
 .heading-secondary {
@@ -607,7 +607,8 @@ body {
     @media (max-width: 37.5em) {
       .header__logo {
         position: absolute;
-        left: -2.5rem; } }
+        left: 1rem;
+        top: 1rem; } }
   .header__text-box {
     position: absolute;
     top: 40%;
