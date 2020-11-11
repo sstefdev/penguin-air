@@ -77,6 +77,9 @@ html {
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
+  @media (max-width: 37.5em) {
+    html {
+      width: 500px; } }
 
 body {
   box-sizing: border-box;
@@ -719,7 +722,7 @@ body {
   @media (max-width: 56.25em) {
     .composition {
       left: 1.6rem;
-      top: 5rem; } }
+      top: 7rem; } }
   .composition__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);

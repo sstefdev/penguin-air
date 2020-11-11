@@ -21,6 +21,10 @@ html {
   @include respond(big-d) {
     font-size: 75%;
   }
+
+  @include respond(phone) {
+    width: 500px;
+  }
 }
 
 body {
