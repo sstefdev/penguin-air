@@ -21,6 +21,13 @@
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.4s 0.1s;
     margin: 2rem;
+    @include respond(tab-lan) {
+    }
+    @include respond(phone) {
+      width: 85%;
+      height: 80vh;
+      left: 21.4rem;
+    }
   }
 
   &__left {
@@ -44,6 +51,12 @@
   &__text {
     font-size: 2rem;
 
+    h3 {
+      @include respond(phone) {
+        margin-bottom: 0.2rem;
+      }
+    }
+
     h2 {
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -51,6 +64,9 @@
     p {
       padding: 2rem;
       padding-bottom: 1rem;
+      @include respond(phone) {
+        visibility: hidden;
+      }
     }
     a {
       margin-bottom: 1.5rem;
@@ -62,6 +78,13 @@
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+    @include respond(phone) {
+      display: block;
+      position: absolute;
+      top: 67rem;
+      left: 6rem;
+      padding-bottom: 5rem;
+    }
   }
 
   &__middle {

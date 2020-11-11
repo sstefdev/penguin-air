@@ -37,7 +37,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: black;
-  //padding: 0.5rem;
+  padding: 0.5rem;
   box-sizing: border-box;
 }
 
@@ -72,6 +72,11 @@ body {
 .heading-teritiary {
   font-size: $default-font;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.heading-teritiary-1 {
+  display: none;
   text-transform: uppercase;
 }
 
