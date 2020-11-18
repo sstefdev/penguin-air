@@ -77,25 +77,6 @@
     hyphens: auto;
   }
 
-  &__middle {
-    position: absolute;
-    left: 49.4%;
-    height: 19.5vw;
-    width: 14.5px;
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
-    );
-    z-index: 9000;
-    @include respond(tab-lan) {
-      left: 39.2rem;
-    }
-    @include respond(tab) {
-      left: 32.82rem;
-    }
-  }
-
   &:target {
     opacity: 1;
     visibility: visible;

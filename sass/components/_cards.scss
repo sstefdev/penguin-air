@@ -70,7 +70,17 @@
           $color-secondary-light,
           $color-secondary-dark
         ),
-        url(../img/new-york-1.jpg);
+        url(/img/new-york-1x.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+          ),
+          url(/img/new-york.jpg);
+      }
     }
 
     &--2 {
@@ -79,7 +89,17 @@
           $color-teritiary,
           $color-teritiary-dark
         ),
-        url(../img/tokyo-trip.jpeg);
+        url(/img/tokyo-trip-1x.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-teritiary,
+            $color-teritiary-dark
+          ),
+          url(/img/tokyo-trip.jpeg);
+      }
     }
 
     &--3 {
@@ -88,7 +108,17 @@
           $color-primary,
           $color-primary-dark
         ),
-        url(../img/venice-trip.jpg);
+        url(/img/venice-trip-1x.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-primary,
+            $color-primary-dark
+          ),
+          url(/img/venice-trip.jpg);
+      }
     }
   }
 
